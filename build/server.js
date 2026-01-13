@@ -3,13 +3,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const app_js_1 = __importDefault(require("./app.js"));
-const env_js_1 = require("./config/env.js");
+const app_1 = __importDefault(require("./app"));
+const env_1 = require("./config/env");
 const startServer = async () => {
     try {
-        app_js_1.default.listen(env_js_1.env.PORT, () => {
-            console.log(`🚀Server is running on http://localhost:${env_js_1.env.PORT}`);
-            console.log(`📝Enviroment: ${env_js_1.env.nodeEnv}`);
+        app_1.default.listen(env_1.env.PORT, () => {
+            console.log(`🚀Server is running on http://localhost:${env_1.env.PORT}`);
+            console.log(`📝Enviroment: ${env_1.env.nodeEnv}`);
         });
     }
     catch (error) {

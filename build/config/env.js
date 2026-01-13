@@ -10,5 +10,6 @@ dotenv_1.default.config();
 exports.env = {
     PORT: process.env.PORT || 3000,
     nodeEnv: process.env.NODE_ENV || 'development',
+    CORS_ORIGIN: process.env.CORS_ORIGIN || "*",
 };
 //# sourceMappingURL=env.js.map
