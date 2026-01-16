@@ -40,8 +40,10 @@ const projectSchema = new Schema(
       required: true
     } */
     links: {
-      repo: String,
-      demo: String,
+      type: {
+        repo: String,
+        demo: String
+      },
       required: true
     },
     status: {
